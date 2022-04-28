@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022"/>
+				<Option working_dir="/Server/cmake-build-prakbs2022"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022"/>
+				<Option working_dir="/Server/cmake-build-prakbs2022"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CLion">
-				<Option output="/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CLion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022"/>
+				<Option output="/Server/cmake-build-prakbs2022/CLion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Server/cmake-build-prakbs2022"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 CLion"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 CLion"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CLion/fast">
-				<Option output="/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CLion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022"/>
+				<Option output="/Server/cmake-build-prakbs2022/CLion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Server/cmake-build-prakbs2022"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,27 +61,27 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 CLion/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 CLion/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022"/>
+				<Option working_dir="/Server/cmake-build-prakbs2022"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Server/cmake-build-prakbs2022/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/tmp/tmp.Nav5yJedqc/main.c">
+		<Unit filename="/Server/main.c">
 			<Option target="CLion"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.Nav5yJedqc/CMakeLists.txt">
+		<Unit filename="/Server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

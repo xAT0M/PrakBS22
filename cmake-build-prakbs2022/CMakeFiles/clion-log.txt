@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/tmp.Nav5yJedqc
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Server
 -- Configuring done
 -- Generating done
--- Build files have been written to: /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022
+-- Build files have been written to: /Server/cmake-build-prakbs2022

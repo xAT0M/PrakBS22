@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/tmp.Nav5yJedqc
+# Install script for directory: /Server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Server/cmake-build-prakbs2022/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

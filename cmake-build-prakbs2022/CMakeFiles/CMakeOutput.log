@@ -10,33 +10,33 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/Server/cmake-build-prakbs2022/CMakeFiles/3.10.2/CompilerIdC/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
+Change Dir: /Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_691df/fast"
-/usr/bin/make -f CMakeFiles/cmTC_691df.dir/build.make CMakeFiles/cmTC_691df.dir/build
-make[1]: Entering directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_691df.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_691df.dir/testCCompiler.c.o   -c /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_691df
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_691df.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_691df.dir/testCCompiler.c.o  -o cmTC_691df 
-make[1]: Leaving directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b39d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b39d7.dir/build.make CMakeFiles/cmTC_b39d7.dir/build
+make[1]: Entering directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b39d7.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b39d7.dir/testCCompiler.c.o   -c /Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b39d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b39d7.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_b39d7.dir/testCCompiler.c.o  -o cmTC_b39d7 
+make[1]: Leaving directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
+Change Dir: /Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3707f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3707f.dir/build.make CMakeFiles/cmTC_3707f.dir/build
-make[1]: Entering directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_3707f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3707f.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o  -o cmTC_3707f 
+Run Build Command:"/usr/bin/make" "cmTC_dcf1c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dcf1c.dir/build.make CMakeFiles/cmTC_dcf1c.dir/build
+make[1]: Entering directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_dcf1c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcf1c.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o  -o cmTC_dcf1c 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -48,24 +48,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3707f' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQxyNK6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3707f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3707f' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dcf1c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cccM3MeG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_dcf1c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dcf1c' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3707f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3707f.dir/build.make CMakeFiles/cmTC_3707f.dir/build]
-  ignore line: [make[1]: Entering directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_3707f]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3707f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o  -o cmTC_3707f ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_dcf1c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_dcf1c.dir/build.make CMakeFiles/cmTC_dcf1c.dir/build]
+  ignore line: [make[1]: Entering directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_dcf1c]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcf1c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o  -o cmTC_dcf1c ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -77,13 +77,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3707f' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQxyNK6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3707f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dcf1c' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cccM3MeG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_dcf1c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccQxyNK6.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cccM3MeG.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -101,7 +101,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3707f] ==> ignore
+    arg [cmTC_dcf1c] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -113,7 +113,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_3707f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_dcf1c.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -143,17 +143,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
+Change Dir: /Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7e56b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7e56b.dir/build.make CMakeFiles/cmTC_7e56b.dir/build
-make[1]: Entering directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7e56b.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7e56b.dir/feature_tests.c.o   -c /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7e56b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e56b.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_7e56b.dir/feature_tests.c.o  -o cmTC_7e56b 
-make[1]: Leaving directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9c69a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9c69a.dir/build.make CMakeFiles/cmTC_9c69a.dir/build
+make[1]: Entering directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c69a.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_9c69a.dir/feature_tests.c.o   -c /Server/cmake-build-prakbs2022/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9c69a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c69a.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_9c69a.dir/feature_tests.c.o  -o cmTC_9c69a 
+make[1]: Leaving directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -163,17 +163,17 @@ make[1]: Leaving directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFile
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
+Change Dir: /Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5a751/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5a751.dir/build.make CMakeFiles/cmTC_5a751.dir/build
-make[1]: Entering directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5a751.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_5a751.dir/feature_tests.c.o   -c /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/feature_tests.c
-Linking C executable cmTC_5a751
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a751.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_5a751.dir/feature_tests.c.o  -o cmTC_5a751 
-make[1]: Leaving directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_2954b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2954b.dir/build.make CMakeFiles/cmTC_2954b.dir/build
+make[1]: Entering directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2954b.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_2954b.dir/feature_tests.c.o   -c /Server/cmake-build-prakbs2022/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2954b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2954b.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_2954b.dir/feature_tests.c.o  -o cmTC_2954b 
+make[1]: Leaving directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -183,17 +183,17 @@ make[1]: Leaving directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFile
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
+Change Dir: /Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c5862/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c5862.dir/build.make CMakeFiles/cmTC_c5862.dir/build
-make[1]: Entering directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c5862.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_c5862.dir/feature_tests.c.o   -c /tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c5862
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5862.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_c5862.dir/feature_tests.c.o  -o cmTC_c5862 
-make[1]: Leaving directory '/tmp/tmp.Nav5yJedqc/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c8459/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8459.dir/build.make CMakeFiles/cmTC_c8459.dir/build
+make[1]: Entering directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8459.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_c8459.dir/feature_tests.c.o   -c /Server/cmake-build-prakbs2022/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c8459
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8459.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_c8459.dir/feature_tests.c.o  -o cmTC_c8459 
+make[1]: Leaving directory '/Server/cmake-build-prakbs2022/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes

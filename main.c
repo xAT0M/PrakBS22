@@ -1,10 +1,3 @@
-/*******************************************************************************
- 
-  Ein TCP-Echo-Server als iterativer Server: Der Server schickt einfach die
-  Daten, die der Client schickt, an den Client zurück.
- 
-*******************************************************************************/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -15,7 +8,7 @@
 #define BUFSIZE 1024 // Größe des Buffers
 #define TRUE 1
 #define ENDLOSSCHLEIFE 1
-#define PORT 4711
+#define PORT 5688
 
 
 int main() {
