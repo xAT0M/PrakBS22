@@ -4,4 +4,4 @@ project(CLion C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(CLion
-        main.c)
+        main.c KeyValue.h KeyValue.c sub.c)

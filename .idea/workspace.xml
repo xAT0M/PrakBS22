@@ -8,44 +8,19 @@
       <config projectName="CLion" targetName="CLion" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="false" CONFIG_NAME="Debug" />
       <configuration PROFILE_NAME="Docker" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="PrakBS2022" GENERATION_OPTIONS="-DCMAKE_BUILD_TYPE=DEBUG" BUILD_OPTIONS="-- -j 3" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77155418-63b5-4bfb-981a-e2537a50ceaf" name="Changes" comment="Bruh">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="77155418-63b5-4bfb-981a-e2537a50ceaf" name="Changes" comment=":D">
+      <change afterPath="$PROJECT_DIR$/KeyValue.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KeyValue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sub.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CLion.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CLion.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CLion.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CLion.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CLion.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CLion.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CLion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CLion.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-prakbs2022/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-prakbs2022/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +71,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Erdinc\Desktop\CLion" />
+      <recent name="C:\Users\Erdinc\Desktop\CLion\cmake-build-prakbs2022" />
+      <recent name="C:\Users\Erdinc\Desktop\CLion\cmake-build-prakbs2022\CMakeFiles" />
+    </key>
   </component>
   <component name="RunManager" selected="CMake Application.CLion">
     <configuration name="CLion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion" TARGET_NAME="CLion" CONFIG_NAME="Docker" RUN_TARGET_PROJECT_NAME="CLion" RUN_TARGET_NAME="CLion">
@@ -149,7 +131,12 @@
       <workItem from="1650884879045" duration="8247000" />
       <workItem from="1650913317171" duration="905000" />
       <workItem from="1651136163263" duration="7222000" />
-      <workItem from="1651147189636" duration="1006000" />
+      <workItem from="1651147189636" duration="1054000" />
+      <workItem from="1651230098292" duration="1916000" />
+      <workItem from="1651449521882" duration="171000" />
+      <workItem from="1651738304270" duration="3904000" />
+      <workItem from="1651813565228" duration="5761000" />
+      <workItem from="1651838341663" duration="6342000" />
     </task>
     <task id="LOCAL-00001" summary="ö">
       <created>1648724529010</created>
@@ -186,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649762934601</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=":D">
+      <created>1651148213346</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651148213346</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +200,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ö" />
     <MESSAGE value="Bruh" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bruh" />
+    <MESSAGE value=":D" />
+    <option name="LAST_COMMIT_MESSAGE" value=":D" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
