@@ -4,6 +4,8 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <sys/shm.h>
+
 
 #include "sub.h"
 #include "KeyValue.h"
@@ -20,6 +22,13 @@ int main() {
     int rfd; // Rendevouz-Descriptor server
     int cfd; // Verbindungs-Descriptor client
 
+
+    int shmID = shmget(IPC_PRIVATE, knotengroesse(), IPC_CREAT | 0644); //bruh
+    if (shmID == -1){
+        perror("Shared Memory kann nicht angelegt werden");
+        exit(-1);
+    }
+    int shared_mem = (int *)shmat(shmID,0,0); //muss zum int, weil es sonst ein char gibt, pointer der adresse
 
     char closeC[BUFSIZE] = "close"; //Befehle
 
