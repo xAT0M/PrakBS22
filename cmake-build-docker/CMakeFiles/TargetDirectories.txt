@@ -1,0 +1,3 @@
+/Server/cmake-build-docker/CMakeFiles/rebuild_cache.dir
+/Server/cmake-build-docker/CMakeFiles/CLion.dir
+/Server/cmake-build-docker/CMakeFiles/edit_cache.dir

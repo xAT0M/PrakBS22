@@ -17,8 +17,6 @@
   <component name="ChangeListManager">
     <list default="true" id="77155418-63b5-4bfb-981a-e2537a50ceaf" name="Changes" comment=":D">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KeyValue.c" beforeDir="false" afterPath="$PROJECT_DIR$/KeyValue.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KeyValue.h" beforeDir="false" afterPath="$PROJECT_DIR$/KeyValue.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +27,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Docker" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,12 +75,12 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.CLion">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="CLion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion" TARGET_NAME="CLion" CONFIG_NAME="Docker" RUN_TARGET_PROJECT_NAME="CLion" RUN_TARGET_NAME="CLion">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CLion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion" TARGET_NAME="CLion" CONFIG_NAME="Docker" RUN_TARGET_PROJECT_NAME="CLion" RUN_TARGET_NAME="CLion">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -135,7 +132,9 @@
       <workItem from="1651738304270" duration="3904000" />
       <workItem from="1651813565228" duration="5761000" />
       <workItem from="1651838341663" duration="6342000" />
-      <workItem from="1652078659430" duration="10743000" />
+      <workItem from="1652078659430" duration="11226000" />
+      <workItem from="1652098965150" duration="2120000" />
+      <workItem from="1652103808858" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="ö">
       <created>1648724529010</created>
@@ -193,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652088339188</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":D">
+      <created>1652095845565</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652095845565</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
