@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_BUILD_TYPE=DEBUG -G "CodeBlocks - Unix Makefiles" /server
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_BUILD_TYPE=DEBUG -G "CodeBlocks - Unix Makefiles" /Server
 -- The C compiler identification is GNU 7.5.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
@@ -14,4 +14,4 @@ CMake Warning:
     CMAKE_CXX_COMPILER
 
 
--- Build files have been written to: /server/cmake-build-docker
+-- Build files have been written to: /Server/cmake-build-docker

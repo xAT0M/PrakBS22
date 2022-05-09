@@ -1,5 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" "C:\Users\Giann\Desktop\C Programme\PrakBS21"
-CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
-CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Giann/Desktop/C Programme/PrakBS21/cmake-build-pc/CMakeFiles/CMakeOutput.log".

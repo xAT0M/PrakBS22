@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /server
+CMAKE_SOURCE_DIR = /Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /server/cmake-build-docker
+CMAKE_BINARY_DIR = /Server/cmake-build-docker
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /server/cmake-build-docker/CMakeFiles /server/cmake-build-docker/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Server/cmake-build-docker/CMakeFiles /Server/cmake-build-docker/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /server/cmake-build-docker/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Server/cmake-build-docker/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PrakBS21
+# Target rules for targets named CLion
 
 # Build rule for target.
-PrakBS21: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 PrakBS21
-.PHONY : PrakBS21
+CLion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CLion
+.PHONY : CLion
 
 # fast build rule for target.
-PrakBS21/fast:
-	$(MAKE) -f CMakeFiles/PrakBS21.dir/build.make CMakeFiles/PrakBS21.dir/build
-.PHONY : PrakBS21/fast
+CLion/fast:
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/build
+.PHONY : CLion/fast
+
+KeyValue.o: KeyValue.c.o
+
+.PHONY : KeyValue.o
+
+# target to build an object file
+KeyValue.c.o:
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/KeyValue.c.o
+.PHONY : KeyValue.c.o
+
+KeyValue.i: KeyValue.c.i
+
+.PHONY : KeyValue.i
+
+# target to preprocess a source file
+KeyValue.c.i:
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/KeyValue.c.i
+.PHONY : KeyValue.c.i
+
+KeyValue.s: KeyValue.c.s
+
+.PHONY : KeyValue.s
+
+# target to generate assembly for a file
+KeyValue.c.s:
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/KeyValue.c.s
+.PHONY : KeyValue.c.s
 
 main.o: main.c.o
 
@@ -129,7 +156,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/PrakBS21.dir/build.make CMakeFiles/PrakBS21.dir/main.c.o
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -138,7 +165,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/PrakBS21.dir/build.make CMakeFiles/PrakBS21.dir/main.c.i
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -147,8 +174,35 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/PrakBS21.dir/build.make CMakeFiles/PrakBS21.dir/main.c.s
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/main.c.s
 .PHONY : main.c.s
+
+sub.o: sub.c.o
+
+.PHONY : sub.o
+
+# target to build an object file
+sub.c.o:
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/sub.c.o
+.PHONY : sub.c.o
+
+sub.i: sub.c.i
+
+.PHONY : sub.i
+
+# target to preprocess a source file
+sub.c.i:
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/sub.c.i
+.PHONY : sub.c.i
+
+sub.s: sub.c.s
+
+.PHONY : sub.s
+
+# target to generate assembly for a file
+sub.c.s:
+	$(MAKE) -f CMakeFiles/CLion.dir/build.make CMakeFiles/CLion.dir/sub.c.s
+.PHONY : sub.c.s
 
 # Help Target
 help:
@@ -157,11 +211,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... PrakBS21"
+	@echo "... CLion"
 	@echo "... edit_cache"
+	@echo "... KeyValue.o"
+	@echo "... KeyValue.i"
+	@echo "... KeyValue.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sub.o"
+	@echo "... sub.i"
+	@echo "... sub.s"
 .PHONY : help
 
 
