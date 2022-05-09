@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/BS21.dir/main.c.o  -o BS21 
