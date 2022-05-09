@@ -4,19 +4,21 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include "sub.c"
+
+#include "sub.h"
 #include "KeyValue.h"
 
 #define BUFSIZE 1024 // Größe des Buffers
 #define ENDLOSSCHLEIFE 1
 #define PORT 5688
 
-void closeProzess();
 
-int rfd; // Rendevouz-Descriptor server
-int cfd; // Verbindungs-Descriptor client
+
 
 int main() {
+
+    int rfd; // Rendevouz-Descriptor server
+    int cfd; // Verbindungs-Descriptor client
 
 
     char closeC[BUFSIZE] = "close"; //Befehle
@@ -74,7 +76,7 @@ int main() {
             while (bytes_read > 0) {  // Solange Daten ankommen, erwartet der Server mehr
 
                 if (stringcompare(in, closeC)){ //Test
-                    closeProzess();
+                    closeProzess(cfd,rfd);
                 }else {
                     printf("\nString: %swurde von der PID %i empfangen \n", in, getpid());
                     //   write(cfd, in, bytes_read); //Test
@@ -96,10 +98,3 @@ int main() {
     }
 }
 
-void closeProzess(){
-
-    printf("\nVerbindung zum Client wird unterbrochen und Prozess %i beendet", getpid());
-    close(cfd); //Client schließen
-    close(rfd); //Server schließen, wieso braucht man das?
-    exit(0); // Prozess beenden
-}

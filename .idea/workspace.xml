@@ -16,12 +16,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77155418-63b5-4bfb-981a-e2537a50ceaf" name="Changes" comment=":D">
-      <change afterPath="$PROJECT_DIR$/KeyValue.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KeyValue.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sub.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sub.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KeyValue.c" beforeDir="false" afterPath="$PROJECT_DIR$/KeyValue.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KeyValue.h" beforeDir="false" afterPath="$PROJECT_DIR$/KeyValue.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sub.c" beforeDir="false" afterPath="$PROJECT_DIR$/sub.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +81,12 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.CLion">
-    <configuration name="CLion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion" TARGET_NAME="CLion" CONFIG_NAME="Docker" RUN_TARGET_PROJECT_NAME="CLion" RUN_TARGET_NAME="CLion">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="CLion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion" TARGET_NAME="CLion" CONFIG_NAME="Docker" RUN_TARGET_PROJECT_NAME="CLion" RUN_TARGET_NAME="CLion">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -137,6 +138,7 @@
       <workItem from="1651738304270" duration="3904000" />
       <workItem from="1651813565228" duration="5761000" />
       <workItem from="1651838341663" duration="6342000" />
+      <workItem from="1652078659430" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="ö">
       <created>1648724529010</created>
