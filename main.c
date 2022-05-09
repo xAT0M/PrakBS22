@@ -23,8 +23,6 @@ int main() {
     int cfd; // Verbindungs-Descriptor client
 
 
-
-
     int shmID = shmget(IPC_PRIVATE, knotengroesse(), IPC_CREAT | 0644); //bruh
     if (shmID == -1){
         perror("Shared Memory kann nicht angelegt werden");
