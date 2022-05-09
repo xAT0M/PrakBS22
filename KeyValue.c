@@ -48,21 +48,23 @@ int put(char* key, char* value)
 }
 
 
-int get(char* key, char* res){
+char* get(char* key){
     Knoten *temp;
     char* t;
 
     if(kopf == NULL){
-        return -1; // -1 = keine keys wurden angelegt
+        return " KEIN KEY WURDE ANGELEGT "; // -1 = keine keys wurden angelegt
     }
     temp = kopf;
 
     if(temp->key == key){
-        return res; // wird wahrscheinlich nicht gehen
+        return temp->value; // wird wahrscheinlich nicht gehen
     }
 
     while(temp->next != NULL){
+
         if(temp->key == key){
+
             t = temp->value;
             temp->next = NULL;
 
@@ -70,7 +72,11 @@ int get(char* key, char* res){
         }
         temp = temp->next;
     }
-    return 0; // 0= key nicht gefunden
+    if(temp->key == key){
+        return temp->value; // wird wahrscheinlich nicht gehen
+    }
+
+    return " KEY NICHT GEFUNDEN "; // 0= key nicht gefunden
 }
 
 int del(char* key){
@@ -95,4 +101,3 @@ int del(char* key){
     }
     return -2;//key nicht gefunden
 }
-

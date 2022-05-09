@@ -23,12 +23,14 @@ int main() {
     int cfd; // Verbindungs-Descriptor client
 
 
+
+
     int shmID = shmget(IPC_PRIVATE, knotengroesse(), IPC_CREAT | 0644); //bruh
     if (shmID == -1){
         perror("Shared Memory kann nicht angelegt werden");
         exit(-1);
     }
-    int shared_mem = (int *)shmat(shmID,0,0); //muss zum int, weil es sonst ein char gibt, pointer der adresse
+//    int shared_mem = (int *)shmat(shmID,0,0); //muss zum int, weil es sonst ein char gibt, pointer der adresse
 
     char closeC[BUFSIZE] = "close"; //Befehle
 
@@ -80,6 +82,7 @@ int main() {
             fprintf(stderr, "NO FORK :(\n");
             exit(-1);
         }
+
         if (pid == 0) { //Kind geht in die Abfrage rein
             bytes_read = read(cfd, in, BUFSIZE); // Liest Daten vom Client
             while (bytes_read > 0) {  // Solange Daten ankommen, erwartet der Server mehr

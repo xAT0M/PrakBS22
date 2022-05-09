@@ -5,7 +5,7 @@
 #define CLION_KEYVALUE_H
 
 int put(char* key, char* value);
-int get(char* key, char* res);
+char* get(char* key);
 int del(char* key);
 
 int knotengroesse();
