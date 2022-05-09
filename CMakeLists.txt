@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.7.2)
-project(PrakBS21 C)
+project(CLion C)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(PrakBS21 main.c)
+add_executable(CLion
+        main.c KeyValue.h KeyValue.c sub.c sub.h)
