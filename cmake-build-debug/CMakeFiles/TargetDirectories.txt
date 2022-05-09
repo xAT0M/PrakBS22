@@ -1,3 +1,0 @@
-/tmp/tmp.zeF7W9vWzm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/tmp/tmp.zeF7W9vWzm/cmake-build-debug/CMakeFiles/PrakBS21.dir
-/tmp/tmp.zeF7W9vWzm/cmake-build-debug/CMakeFiles/edit_cache.dir
