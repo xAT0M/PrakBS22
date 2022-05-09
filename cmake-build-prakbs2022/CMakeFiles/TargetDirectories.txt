@@ -1,3 +1,0 @@
-/Server/cmake-build-prakbs2022/CMakeFiles/rebuild_cache.dir
-/Server/cmake-build-prakbs2022/CMakeFiles/CLion.dir
-/Server/cmake-build-prakbs2022/CMakeFiles/edit_cache.dir
