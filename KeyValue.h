@@ -4,12 +4,19 @@
 #ifndef CLION_KEYVALUE_H
 #define CLION_KEYVALUE_H
 
-int put(char* key, char* value);
-char* get(char* key);
-int del(char* key);
+#define MAXSTORE 100
 
-int knotengroesse();
 
+typedef struct KeyValueStore {
+    char key[MAXSTORE];
+    char value[MAXSTORE];
+} kvs;
+
+
+
+int put(char* key, char *value, kvs *speicher);
+char* get(char* key, kvs *speicher);
+int del(char* key, kvs *speicher);
 
 
 

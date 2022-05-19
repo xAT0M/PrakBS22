@@ -4,11 +4,12 @@
 #ifndef CLION_SUB_H
 #define CLION_SUB_H
 
-int stringcompare(char string[], char string1[]);
-void closeProzess(int cfd, int rfd);
+
+void closeProzess(int cfd,int rfd);
 
 
 
+int welcherBefehlIstEs(char String[]);
 
 
 

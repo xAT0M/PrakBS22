@@ -6,24 +6,42 @@
 #include <netinet/in.h>
 #include "sub.h"
 #include "KeyValue.h"
-
-int stringcompare(char string[], char string1[]) {
-    int i = 0;
-    while (string[i] != '\0' || string1[i] != '\0') {
-        if (string[i] != string1[i]) {
-            return 0;
-
-        }
-        return 1;
-    }
-}
+#include <string.h>
 
 
-void closeProzess(int cfd, int rfd){
+
+void closeProzess(int cfd,int rfd){
 
     printf("\nVerbindung zum Client wird unterbrochen und Prozess %i beendet", getpid());
+
     close(cfd); //Client schließen
-    close(rfd); //Server schließen, wieso braucht man das?
+    close(rfd);
     exit(0); // Prozess beenden
 }
+
+
+
+int welcherBefehlIstEs(char String[]){
+
+    char get[] = "get";
+    char put[] = "put";
+    char del[] = "del";
+    char quit[] = "QUIT";
+
+    if(strcmp(String,get)==0){
+        return 2;
+
+    }else if(strcmp(String,put)==0){
+        return 1;
+
+    }else if(strcmp(String,del)==0){
+        return 3;
+
+    }else if(strcmp(String,quit)==0){
+        return 4;
+    }
+    return 0;
+
+}
+
 

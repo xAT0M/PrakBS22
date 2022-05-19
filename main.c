@@ -5,7 +5,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <sys/shm.h>
-
+#include <string.h>
 
 #include "sub.h"
 #include "KeyValue.h"
@@ -13,30 +13,38 @@
 #define BUFSIZE 1024 // Größe des Buffers
 #define ENDLOSSCHLEIFE 1
 #define PORT 5688
+#define KeyValue 3
 
 
 
-//aldobruhnb
 int main() {
-
-
 
     int rfd; // Rendevouz-Descriptor server
     int cfd; // Verbindungs-Descriptor client
 
+    char *befehle[KeyValue];
+    memset(befehle,0,sizeof(befehle));
+    char *zs;
+    int i;
 
-    int shmID = shmget(IPC_PRIVATE, knotengroesse(), IPC_CREAT | 0644); //bruh
-    if (shmID == -1){
+
+
+    kvs *speicher = NULL; //Struct mit dem Array drin
+
+    int shmID = shmget(IPC_PRIVATE, MAXSTORE * sizeof (kvs), IPC_CREAT | 0644); // Segment öffnen mit einer größe von 100 kvs
+    speicher = (kvs *)shmat(shmID,0,0); // Alle Prozesse an das Segment einbinden
+    memset(speicher,0,MAXSTORE * sizeof (kvs)); // Alle Keys und Values auf 0 setzen
+
+    if (shmID == -1) {
         perror("Shared Memory kann nicht angelegt werden");
         exit(-1);
-    }
-//    int shared_mem = (int *)shmat(shmID,0,0); //muss zum int, weil es sonst ein char gibt, pointer der adresse
+    } // Share Memory fehler
 
-    char closeC[BUFSIZE] = "close"; //Befehle
 
     struct sockaddr_in client; // Socketadresse eines Clients
     socklen_t client_len; // Länge der Client-Daten
     char in[BUFSIZE]; // Daten vom Client an den Server
+    memset(in,0,sizeof(in));
     int bytes_read; // Anzahl der Bytes, die der Client geschickt hat
 
 
@@ -77,36 +85,66 @@ int main() {
 
         // Verbindung eines Clients wird entgegengenommen
         cfd = accept(rfd, (struct sockaddr *) &client, &client_len);
+
         int pid = fork(); // Programm wird dupliziert, Vater und Sohn sind mit Client verbunden
+
         if (pid < 0) { // Fork ist fehlgeschlagen
-            fprintf(stderr, "NO FORK :(\n");
+            fprintf(  stderr, "NO FORK :(\n");
             exit(-1);
         }
 
         if (pid == 0) { //Kind geht in die Abfrage rein
+
             bytes_read = read(cfd, in, BUFSIZE); // Liest Daten vom Client
+
             while (bytes_read > 0) {  // Solange Daten ankommen, erwartet der Server mehr
 
-                if (stringcompare(in, closeC)){ //Test
-                    closeProzess(cfd,rfd);
-                }else {
-                    printf("\nString: %swurde von der PID %i empfangen \n", in, getpid());
-                    //   write(cfd, in, bytes_read); //Test
+                printf("\nString: %s \nwurde von der PID %i empfangen \n", in, getpid());
+
+                zs = strtok(in," ");
+
+                for(i=0;i<KeyValue;i++){
+                    befehle[i] = zs;
+                    zs = strtok(NULL, " ");
                 }
+
+                switch (welcherBefehlIstEs(befehle[0])) {
+                    case 1:
+                        put(befehle[1],befehle[2],speicher); printf(" %s \n",get(befehle[1],speicher)); break;
+                    case 2:
+                       printf(" %s \n",get(befehle[1],speicher));break;
+                    case 3:
+                        del(befehle[1],speicher);break; //testen
+                    case 4:
+                        closeProzess(cfd,rfd); shmdt(speicher); break;
+                    default:
+                        break;
+                }
+
+
+
+
+                memset(befehle,0,sizeof(befehle));
+                memset(in,0,sizeof(in));
 
                 bytes_read = read(cfd, in, BUFSIZE);
 
                 if (bytes_read == 0) {
                     printf("\nVerbindung zum Client unterbrochen %i", getpid());
+                    shmdt(speicher);
+                    shmctl(shmID,IPC_RMID,0);
                     exit(0);
                 }
-                if (pid > 0) { //Vater schließt die Verbindung zum Client
+                if (pid > 0) { //Vater schließt die Verbindung zum Clien
                     close(cfd);
+                    shmctl(shmID,IPC_RMID,0);
                 }
             }
+
             // Rendevouz Descriptor schließen
             close(rfd);
+            shmctl(shmID,IPC_RMID,0);
+
         }
     }
 }
-

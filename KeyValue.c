@@ -1,103 +1,47 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
+#include "KeyValue.h"
 
-//testo
-typedef struct Knoten_ {
-    char *key;
-    char *value;
-    struct Knoten_ *next;
-} Knoten;
+int c=0;
 
-Knoten *kopf = NULL;
+int put(char* key, char *value, kvs *speicher){
 
-
-int knotengroesse(){
-    return sizeof(Knoten);
-}
-
-
-
-int put(char* key, char* value)
-{
-
-    Knoten *a, *temp;
-
-    a = (Knoten *) malloc(sizeof(Knoten));
-    if (kopf == NULL) {
-        kopf = a;
-        kopf->key = key;
-        kopf->value = value;
-        kopf->next = NULL;
-    } else {
-        temp = kopf;
-        while (temp->next != NULL) {
-            if(temp->key == key){
-                temp->value = value;
-                temp->next = NULL;
-                return 1; //1 = vorhanden, wird überschrieben
-            }
-            temp = temp->next;
+    for(int i = 0;i<MAXSTORE;i++){
+        if(strcmp(speicher[i].key,key)==0){
+            strcpy(speicher[i].value,value);
+            return 1;
         }
-        temp->next = a;
-        a->key = key;
-        a->value = value;
-        a->next = NULL;
-        return 0; //0, nicht vorhanden, wird erstellt
-
     }
+    strcpy(speicher[c].key,key);
+    strcpy(speicher[c].value,value);
+    c++;
+    return 0;
 }
 
 
-char* get(char* key){
-    Knoten *temp;
-    char* t;
+char* get(char* key, kvs *speicher){
 
-    if(kopf == NULL){
-        return " KEIN KEY WURDE ANGELEGT "; // -1 = keine keys wurden angelegt
-    }
-    temp = kopf;
-
-    if(temp->key == key){
-        return temp->value; // wird wahrscheinlich nicht gehen
-    }
-
-    while(temp->next != NULL){
-
-        if(temp->key == key){
-
-            t = temp->value;
-            temp->next = NULL;
-
-            return t;
+    for(int i=0; i < MAXSTORE; i++) {
+        if (strcmp(speicher[i].key, key) == 0) {
+            return speicher[i].value;
         }
-        temp = temp->next;
-    }
-    if(temp->key == key){
-        return temp->value; // wird wahrscheinlich nicht gehen
     }
 
-    return " KEY NICHT GEFUNDEN "; // 0= key nicht gefunden
+    return "Key nicht im Store";
 }
 
-int del(char* key){
-    Knoten *next, *prev;
-
-    if (kopf == NULL){
-        return -1; // -1= Liste hat keinen eintrag
-    }
-    else
-    {
-        prev = kopf;
-        next=kopf->next;
-    }
-    while(next !=NULL){
-        if(next->key == key){
-            prev->next = next->next;
-            free(next);
-            return 0; //0=gefunden und gelöscht
+int del(char* key, kvs *speicher){
+    int i;
+    for(i = 0;i<MAXSTORE;i++){
+        if(strcmp(speicher[i].key,key)==0){
+            break;
         }
-        prev=next;
-        next = next->next;
     }
-    return -2;//key nicht gefunden
+   while(i<MAXSTORE ) {
+       strcpy(speicher[i].key,speicher[i+1].key);
+       strcpy(speicher[i].value,speicher[i+1].key);
+       i++;
+    }
+   c--;
 }
+
+
