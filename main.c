@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <sys/shm.h>
 #include <string.h>
-
 #include "sub.h"
 #include "KeyValue.h"
 
@@ -111,11 +109,11 @@ int main() {
 
                 switch (welcherBefehlIstEs(befehle[0])) {
                     case 1:
-                        put(befehle[1],befehle[2],speicher); break;
+                        printf("Der Key: %s \n wurde mit dem Value: %s gespeichert. \n",befehle[1],befehle[2]), put(befehle[1],befehle[2],speicher); break;
                     case 2:
                        printf("Für den Key: %s \n wurde der Value: %s gefunden \n",befehle[1],get(befehle[1],speicher));break;
                     case 3:
-                        del(befehle[1],speicher);break; //testen
+                        del(befehle[1],speicher); break; //testen
                     case 4:
                         closeProzess(cfd,rfd); shmdt(speicher); break;
                     default:
