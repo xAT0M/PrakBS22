@@ -34,6 +34,7 @@ int main() {
     int shmID = shmget(IPC_PRIVATE, MAXSTORE * sizeof (kvs), IPC_CREAT | 0644); // Segment öffnen mit einer größe von 100 kvs
     speicher = (kvs *)shmat(shmID,0,0); // Alle Prozesse an das Segment einbinden
     memset(speicher,0,MAXSTORE * sizeof (kvs)); // Alle Keys und Values auf 0 setzen
+    shmctl(shmID,IPC_RMID,0);
 
     if (shmID == -1) {
         perror("Shared Memory kann nicht angelegt werden");
@@ -110,9 +111,9 @@ int main() {
 
                 switch (welcherBefehlIstEs(befehle[0])) {
                     case 1:
-                        put(befehle[1],befehle[2],speicher); printf(" %s \n",get(befehle[1],speicher)); break;
+                        put(befehle[1],befehle[2],speicher); break;
                     case 2:
-                       printf(" %s \n",get(befehle[1],speicher));break;
+                       printf("Für den Key: %s \n wurde der Value: %s gefunden \n",befehle[1],get(befehle[1],speicher));break;
                     case 3:
                         del(befehle[1],speicher);break; //testen
                     case 4:
@@ -132,18 +133,17 @@ int main() {
                 if (bytes_read == 0) {
                     printf("\nVerbindung zum Client unterbrochen %i", getpid());
                     shmdt(speicher);
-                    shmctl(shmID,IPC_RMID,0);
                     exit(0);
                 }
                 if (pid > 0) { //Vater schließt die Verbindung zum Clien
                     close(cfd);
-                    shmctl(shmID,IPC_RMID,0);
+
                 }
             }
 
             // Rendevouz Descriptor schließen
             close(rfd);
-            shmctl(shmID,IPC_RMID,0);
+
 
         }
     }

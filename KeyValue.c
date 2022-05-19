@@ -26,7 +26,7 @@ char* get(char* key, kvs *speicher){
         }
     }
 
-    return "Key nicht im Store";
+    return "Key_nicht_im_Store";
 }
 
 int del(char* key, kvs *speicher){
