@@ -23,6 +23,7 @@ int main() {
     char *befehle[KeyValue];
     memset(befehle,0,sizeof(befehle));
     char *zs;
+    char *b = ";";
     int i;
 
 
@@ -109,7 +110,8 @@ int main() {
 
                 switch (welcherBefehlIstEs(befehle[0])) {
                     case 1:
-                        printf("Der Key: %s \n wurde mit dem Value: %s gespeichert. \n",befehle[1],befehle[2]), put(befehle[1],befehle[2],speicher); break;
+                        printf("Der Key: %s \n wurde mit dem Value: %s gespeichert. \n",befehle[1],befehle[2]), put(befehle[1],befehle[2],speicher);
+                        write(cfd, befehle[0], BUFSIZE);break;
                     case 2:
                        printf("Für den Key: %s \n wurde der Value: %s gefunden \n",befehle[1],get(befehle[1],speicher));break;
                     case 3:
