@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Server/KeyValue.c" "/Server/cmake-build-docker/CMakeFiles/CLion.dir/KeyValue.c.o"
-  "/Server/main.c" "/Server/cmake-build-docker/CMakeFiles/CLion.dir/main.c.o"
-  "/Server/sub.c" "/Server/cmake-build-docker/CMakeFiles/CLion.dir/sub.c.o"
+  "/ServerNeu5/KeyValue.c" "/ServerNeu5/cmake-build-docker/CMakeFiles/CLion.dir/KeyValue.c.o"
+  "/ServerNeu5/main.c" "/ServerNeu5/cmake-build-docker/CMakeFiles/CLion.dir/main.c.o"
+  "/ServerNeu5/sub.c" "/ServerNeu5/cmake-build-docker/CMakeFiles/CLion.dir/sub.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

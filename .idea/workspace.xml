@@ -10,13 +10,31 @@
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="false" CONFIG_NAME="Debug" />
-      <configuration PROFILE_NAME="Docker" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Praktikum-BS22" GENERATION_OPTIONS="-DCMAKE_BUILD_TYPE=DEBUG" BUILD_OPTIONS="-- -j 3" />
+      <configuration PROFILE_NAME="Debug-PrakBS2022" ENABLED="false" CONFIG_NAME="Debug" TOOLCHAIN_NAME="PrakBS2022" />
+      <configuration PROFILE_NAME="Docker" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="PrakBS2022" GENERATION_OPTIONS="-DCMAKE_BUILD_TYPE=DEBUG" BUILD_OPTIONS="-- -j 3" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77155418-63b5-4bfb-981a-e2537a50ceaf" name="Changes" comment="test">
+    <list default="true" id="77155418-63b5-4bfb-981a-e2537a50ceaf" name="Changes" comment=":D">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2022_14_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2022_14_59__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2022_15_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2022_15_59__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2022_16_01__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CLion.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CLion.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CLion.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CLion.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CLion.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CLion.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CLion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CLion.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-docker/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-docker/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +82,7 @@
     <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-prakbs2022" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -75,11 +93,6 @@
   </component>
   <component name="RunManager" selected="CMake Application.CLion">
     <configuration name="CLion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion" TARGET_NAME="CLion" CONFIG_NAME="Docker" RUN_TARGET_PROJECT_NAME="CLion" RUN_TARGET_NAME="CLion">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -134,6 +147,23 @@
       <workItem from="1652078659430" duration="10743000" />
       <workItem from="1652103023185" duration="112000" />
       <workItem from="1652103241630" duration="1042000" />
+      <workItem from="1652159261812" duration="4581000" />
+      <workItem from="1652677536082" duration="7737000" />
+      <workItem from="1652687749816" duration="28000" />
+      <workItem from="1652687837811" duration="590000" />
+      <workItem from="1652763541745" duration="16812000" />
+      <workItem from="1652850414418" duration="11353000" />
+      <workItem from="1652937913134" duration="1002000" />
+      <workItem from="1652951452419" duration="1122000" />
+      <workItem from="1652983161424" duration="2119000" />
+      <workItem from="1652985730980" duration="55000" />
+      <workItem from="1653022875082" duration="3378000" />
+      <workItem from="1653028711322" duration="1413000" />
+      <workItem from="1653040775243" duration="596000" />
+      <workItem from="1653383266111" duration="9564000" />
+      <workItem from="1653456088892" duration="524000" />
+      <workItem from="1653543592328" duration="6081000" />
+      <workItem from="1653562836747" duration="805000" />
     </task>
     <task id="LOCAL-00001" summary="ö">
       <created>1648724529010</created>
@@ -205,7 +235,49 @@
       <option name="project" value="LOCAL" />
       <updated>1652103567297</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=":D">
+      <created>1652105059426</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652105059426</updated>
+    </task>
+    <task id="LOCAL-00012" summary=":D">
+      <created>1652937953575</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652937953575</updated>
+    </task>
+    <task id="LOCAL-00013" summary=":D">
+      <created>1652938795205</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652938795205</updated>
+    </task>
+    <task id="LOCAL-00014" summary=":D">
+      <created>1652985767531</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652985767531</updated>
+    </task>
+    <task id="LOCAL-00015" summary=":D">
+      <created>1653549159615</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653549159615</updated>
+    </task>
+    <task id="LOCAL-00016" summary=":D">
+      <created>1653563400419</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653563400419</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,9 +297,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ö" />
     <MESSAGE value="Bruh" />
-    <MESSAGE value=":D" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value=":D" />
+    <option name="LAST_COMMIT_MESSAGE" value=":D" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
