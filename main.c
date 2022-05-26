@@ -11,7 +11,7 @@
 
 #define ENDLOSSCHLEIFE 1
 #define PORT 5688 // Port vom Server
-
+//aldo
 int main()
 {
 
