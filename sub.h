@@ -5,9 +5,10 @@
 void closeProzess(int cfd,int rfd);
 
 
-
-int welcherBefehlIstEs(char String[]);
-
+int BefehlErkenner(char String[]);
 
 
-#endif //CLION_SUB_H
+
+
+
+#endif

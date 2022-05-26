@@ -5,53 +5,49 @@
 #include <netinet/in.h>
 #include <sys/shm.h>
 #include <string.h>
+
 #include "sub.h"
 #include "KeyValue.h"
 
-#define BUFSIZE 1024 // Größe des Buffers
 #define ENDLOSSCHLEIFE 1
-#define PORT 5688
-#define KeyValue 3
+#define PORT 5688 // Port vom Server
 
+int main()
+{
 
+    int rfd; // Rendevouz-Descriptor Server, dient zur Communication
+    int cfd; // Verbindungs-Descriptor vom Client, dient nur zum Verbinden
 
-int main() {
+    char string1[BUFSIZ];
+    char string2[BUFSIZ];
+    char string3[BUFSIZ];
+    char output[BUFSIZ];
 
-    int rfd; // Rendevouz-Descriptor server
-    int cfd; // Verbindungs-Descriptor client
+    FILE *sockstream;
 
-    char *befehle[KeyValue];
-    memset(befehle,0,sizeof(befehle));
-    char *zs;
-    char *b = ";";
-    int i;
+    kvs *speicher = NULL; //Shared Memory vom KeyValueStore
 
-
-
-    kvs *speicher = NULL; //Struct mit dem Array drin
-
-    int shmID = shmget(IPC_PRIVATE, MAXSTORE * sizeof (kvs), IPC_CREAT | 0644); // Segment öffnen mit einer größe von 100 kvs
+    int shmID = shmget(IPC_PRIVATE, MAXCHAR * sizeof (kvs), IPC_CREAT | 0644); // Segment öffnen mit einer größe von 100 Einträgen
     speicher = (kvs *)shmat(shmID,0,0); // Alle Prozesse an das Segment einbinden
-    memset(speicher,0,MAXSTORE * sizeof (kvs)); // Alle Keys und Values auf 0 setzen
-    shmctl(shmID,IPC_RMID,0);
+    memset(speicher, 0, MAXCHAR * sizeof (kvs)); // Alle Keys und Values leeren
+    shmctl(shmID,IPC_RMID,0); // Segment soll gelöscht werden, falls keiner mehr Verbunden ist
 
-    if (shmID == -1) {
+    if (shmID == -1)
+    {
         perror("Shared Memory kann nicht angelegt werden");
         exit(-1);
-    } // Share Memory fehler
+    }
 
 
-    struct sockaddr_in client; // Socketadresse eines Clients
-    socklen_t client_len; // Länge der Client-Daten
-    char in[BUFSIZE]; // Daten vom Client an den Server
-    memset(in,0,sizeof(in));
-    int bytes_read; // Anzahl der Bytes, die der Client geschickt hat
+    struct sockaddr_in client; // Daten vom Client
+    socklen_t client_len; // Länge des Clients
 
 
     // Socket erstellen
     rfd = socket(AF_INET, SOCK_STREAM, 0);
-    if (rfd < 0) {
-        fprintf(stderr, "socket konnte nicht erstellt werden\n");
+    if (rfd < 0)
+    {
+        fprintf(stderr, "\nFehler: socket konnte nicht erstellt werden\n");
         exit(-1);
     }
 
@@ -66,85 +62,89 @@ int main() {
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = INADDR_ANY;
     server.sin_port = htons(PORT);
+
     int brt = bind(rfd, (struct sockaddr *) &server, sizeof(server));
-    if (brt < 0) {
+    if (brt < 0)
+    {
         fprintf(stderr, "socket konnte nicht gebunden werden\n");
         exit(-1);
     }
 
 
-    // Socket lauschen lassen
+    // Socket wartet bis ein Client sich verbindet
     int lrt = listen(rfd, 5);
-    if (lrt < 0) {
+    if (lrt < 0)
+    {
         fprintf(stderr, "socket konnte nicht listen gesetzt werden\n");
         exit(-1);
     }
 
     while (ENDLOSSCHLEIFE) {
 
+        cfd = accept(rfd, (struct sockaddr *) &client, &client_len); // Server akzeptiert einen Client
 
-        // Verbindung eines Clients wird entgegengenommen
-        cfd = accept(rfd, (struct sockaddr *) &client, &client_len);
+        int pid = fork(); // Ein 2. Prozess entsteht
 
-        int pid = fork(); // Programm wird dupliziert, Vater und Sohn sind mit Client verbunden
+        if (pid == 0)
+        {
+            printf("\nVerbindung zum Client %i wurde aufgebaut \xE2\x9C\x93\n", getpid());
+        }
 
-        if (pid < 0) { // Fork ist fehlgeschlagen
-            fprintf(  stderr, "NO FORK :(\n");
+        if (pid < 0)
+        {
+            fprintf(  stderr, "Fehler: es konnte nicht geforkt werden\n\n");
             exit(-1);
         }
 
-        if (pid == 0) { //Kind geht in die Abfrage rein
+        sockstream = fdopen(cfd, "r+"); // r+ = Read & Write
 
-            bytes_read = read(cfd, in, BUFSIZE); // Liest Daten vom Client
+        while(pid == 0)
+        {
+          memset(output,0,sizeof(output));
+          memset(string1,0,sizeof(string1));
+          memset(string2, 0, sizeof(string2));
+          memset(string3, 0, sizeof(string3));
 
-            while (bytes_read > 0) {  // Solange Daten ankommen, erwartet der Server mehr
-
-                printf("\nString: %s \nwurde von der PID %i empfangen \n", in, getpid());
-
-                zs = strtok(in," ");
-
-                for(i=0;i<KeyValue;i++){
-                    befehle[i] = zs;
-                    zs = strtok(NULL, " ");
-                }
-
-                switch (welcherBefehlIstEs(befehle[0])) {
-                    case 1:
-                        printf("Der Key: %s \n wurde mit dem Value: %s gespeichert. \n",befehle[1],befehle[2]), put(befehle[1],befehle[2],speicher);
-                        write(cfd, befehle[0], BUFSIZE);break;
-                    case 2:
-                       printf("Für den Key: %s \n wurde der Value: %s gefunden \n",befehle[1],get(befehle[1],speicher));break;
-                    case 3:
-                        del(befehle[1],speicher); break; //testen
-                    case 4:
-                        closeProzess(cfd,rfd); shmdt(speicher); break;
-                    default:
-                        break;
-                }
-
-
-
-
-                memset(befehle,0,sizeof(befehle));
-                memset(in,0,sizeof(in));
-
-                bytes_read = read(cfd, in, BUFSIZE);
-
-                if (bytes_read == 0) {
-                    printf("\nVerbindung zum Client unterbrochen %i", getpid());
-                    shmdt(speicher);
-                    exit(0);
-                }
-                if (pid > 0) { //Vater schließt die Verbindung zum Clien
-                    close(cfd);
-
+          fscanf(sockstream, "%s", string1);
+            if(BefehlErkenner(string1) > 1)
+            {
+                fscanf(sockstream, "%s", string2);
+                if(BefehlErkenner(string1) == 4)
+                {
+                    fscanf(sockstream, "%s", string3);
                 }
             }
+            rewind(sockstream);
 
-            // Rendevouz Descriptor schließen
-            close(rfd);
+            switch (BefehlErkenner(string1))
+            {
+                case 4:
+                    sprintf(output,"\n%s:%s:%s\n\n", string1,string2, string3), put(string2, string3, speicher);
+                    write(cfd,output,sizeof(output));
+                    break;
+                case 3:
+                    sprintf(output,"\n%s:%s:%s\n\n", string1,string2, get(string2, speicher));
+                    write(cfd,output,sizeof(output));
+                    break;
+                case 2:
+                    sprintf(output,"\n%s:%s:%s\n\n",string1,string2, get(string2, speicher));del(string2, speicher);
+                    write(cfd,output,sizeof(output));
+                    break;
+                case 1:
+                    closeProzess(cfd, rfd);shmdt(speicher);
+                    break;
+                default:
+             //        sprintf(output,"\nKein Befehl erkannt\n\n");write(cfd,output,sizeof(output));
+                    break;
+            }
 
-
+//            if (bytes_read == 0) {
+//                printf("\nVerbindung zum Client unterbrochen %i", getpid());
+//                shmdt(speicher);
+//                exit(0);
+//            }
         }
+            close(cfd);
+        }
+    close(rfd);  // Rendevouz Descriptor schließen
     }
-}
