@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_BUILD_TYPE=DEBUG -G "CodeBlocks - Unix Makefiles" /ServerNeu5
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_BUILD_TYPE=DEBUG -G "CodeBlocks - Unix Makefiles" /ServerNeu8
 -- The C compiler identification is GNU 7.5.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
@@ -14,4 +14,4 @@ CMake Warning:
     CMAKE_CXX_COMPILER
 
 
--- Build files have been written to: /ServerNeu5/cmake-build-docker
+-- Build files have been written to: /ServerNeu8/cmake-build-docker

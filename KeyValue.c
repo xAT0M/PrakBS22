@@ -9,6 +9,17 @@
 
 int c=0;
 
+int search(char* key, kvs *speicher){
+    for(int i = 0; i < MAXCHAR; i++)
+    {
+        if(strcmp(speicher[i].key,key)==0)   // Suche nach
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
+
 int put( char* key,  char *value, kvs *speicher)
 {
 

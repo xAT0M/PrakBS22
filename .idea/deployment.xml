@@ -5,7 +5,7 @@
       <paths name="PrakBS2022 (b66f34f9-7cb5-42f4-b9ab-c010f582a110)">
         <serverdata>
           <mappings>
-            <mapping deploy="/ServerNeu5" local="$PROJECT_DIR$" />
+            <mapping deploy="/ServerNeu8" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-docker" />

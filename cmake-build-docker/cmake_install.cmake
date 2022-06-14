@@ -1,4 +1,4 @@
-# Install script for directory: /ServerNeu5
+# Install script for directory: /ServerNeu8
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/ServerNeu5/cmake-build-docker/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/ServerNeu8/cmake-build-docker/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

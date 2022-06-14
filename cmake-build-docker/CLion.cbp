@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/ServerNeu5/cmake-build-docker"/>
+				<Option working_dir="/ServerNeu8/cmake-build-docker"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/ServerNeu5/cmake-build-docker"/>
+				<Option working_dir="/ServerNeu8/cmake-build-docker"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CLion">
-				<Option output="/ServerNeu5/cmake-build-docker/CLion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/ServerNeu5/cmake-build-docker"/>
+				<Option output="/ServerNeu8/cmake-build-docker/CLion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/ServerNeu8/cmake-build-docker"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 CLion"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 CLion"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CLion/fast">
-				<Option output="/ServerNeu5/cmake-build-docker/CLion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/ServerNeu5/cmake-build-docker"/>
+				<Option output="/ServerNeu8/cmake-build-docker/CLion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/ServerNeu8/cmake-build-docker"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,39 +61,39 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 CLion/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 CLion/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/ServerNeu5/cmake-build-docker"/>
+				<Option working_dir="/ServerNeu8/cmake-build-docker"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu5/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/ServerNeu8/cmake-build-docker/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/ServerNeu5/KeyValue.c">
+		<Unit filename="/ServerNeu8/KeyValue.c">
 			<Option target="CLion"/>
 		</Unit>
-		<Unit filename="/ServerNeu5/KeyValue.h">
+		<Unit filename="/ServerNeu8/KeyValue.h">
 			<Option target="CLion"/>
 		</Unit>
-		<Unit filename="/ServerNeu5/main.c">
+		<Unit filename="/ServerNeu8/main.c">
 			<Option target="CLion"/>
 		</Unit>
-		<Unit filename="/ServerNeu5/sub.c">
+		<Unit filename="/ServerNeu8/sub.c">
 			<Option target="CLion"/>
 		</Unit>
-		<Unit filename="/ServerNeu5/sub.h">
+		<Unit filename="/ServerNeu8/sub.h">
 			<Option target="CLion"/>
 		</Unit>
-		<Unit filename="/ServerNeu5/CMakeLists.txt">
+		<Unit filename="/ServerNeu8/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

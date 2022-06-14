@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ServerNeu5
+CMAKE_SOURCE_DIR = /ServerNeu8
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ServerNeu5/cmake-build-docker
+CMAKE_BINARY_DIR = /ServerNeu8/cmake-build-docker
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CLion.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/CLion.dir/flags.make
 
 CMakeFiles/CLion.dir/main.c.o: CMakeFiles/CLion.dir/flags.make
 CMakeFiles/CLion.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ServerNeu5/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CLion.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CLion.dir/main.c.o   -c /ServerNeu5/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ServerNeu8/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CLion.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CLion.dir/main.c.o   -c /ServerNeu8/main.c
 
 CMakeFiles/CLion.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CLion.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /ServerNeu5/main.c > CMakeFiles/CLion.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /ServerNeu8/main.c > CMakeFiles/CLion.dir/main.c.i
 
 CMakeFiles/CLion.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CLion.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /ServerNeu5/main.c -o CMakeFiles/CLion.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /ServerNeu8/main.c -o CMakeFiles/CLion.dir/main.c.s
 
 CMakeFiles/CLion.dir/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/CLion.dir/main.c.o.provides.build: CMakeFiles/CLion.dir/main.c.o
 
 CMakeFiles/CLion.dir/KeyValue.c.o: CMakeFiles/CLion.dir/flags.make
 CMakeFiles/CLion.dir/KeyValue.c.o: ../KeyValue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ServerNeu5/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CLion.dir/KeyValue.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CLion.dir/KeyValue.c.o   -c /ServerNeu5/KeyValue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ServerNeu8/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CLion.dir/KeyValue.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CLion.dir/KeyValue.c.o   -c /ServerNeu8/KeyValue.c
 
 CMakeFiles/CLion.dir/KeyValue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CLion.dir/KeyValue.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /ServerNeu5/KeyValue.c > CMakeFiles/CLion.dir/KeyValue.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /ServerNeu8/KeyValue.c > CMakeFiles/CLion.dir/KeyValue.c.i
 
 CMakeFiles/CLion.dir/KeyValue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CLion.dir/KeyValue.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /ServerNeu5/KeyValue.c -o CMakeFiles/CLion.dir/KeyValue.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /ServerNeu8/KeyValue.c -o CMakeFiles/CLion.dir/KeyValue.c.s
 
 CMakeFiles/CLion.dir/KeyValue.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/CLion.dir/KeyValue.c.o.provides.build: CMakeFiles/CLion.dir/KeyValue.
 
 CMakeFiles/CLion.dir/sub.c.o: CMakeFiles/CLion.dir/flags.make
 CMakeFiles/CLion.dir/sub.c.o: ../sub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ServerNeu5/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CLion.dir/sub.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CLion.dir/sub.c.o   -c /ServerNeu5/sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ServerNeu8/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CLion.dir/sub.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CLion.dir/sub.c.o   -c /ServerNeu8/sub.c
 
 CMakeFiles/CLion.dir/sub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CLion.dir/sub.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /ServerNeu5/sub.c > CMakeFiles/CLion.dir/sub.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /ServerNeu8/sub.c > CMakeFiles/CLion.dir/sub.c.i
 
 CMakeFiles/CLion.dir/sub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CLion.dir/sub.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /ServerNeu5/sub.c -o CMakeFiles/CLion.dir/sub.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /ServerNeu8/sub.c -o CMakeFiles/CLion.dir/sub.c.s
 
 CMakeFiles/CLion.dir/sub.c.o.requires:
 
@@ -143,7 +143,7 @@ CLion: CMakeFiles/CLion.dir/KeyValue.c.o
 CLion: CMakeFiles/CLion.dir/sub.c.o
 CLion: CMakeFiles/CLion.dir/build.make
 CLion: CMakeFiles/CLion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/ServerNeu5/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable CLion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/ServerNeu8/cmake-build-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable CLion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CLion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/CLion.dir/clean:
 .PHONY : CMakeFiles/CLion.dir/clean
 
 CMakeFiles/CLion.dir/depend:
-	cd /ServerNeu5/cmake-build-docker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ServerNeu5 /ServerNeu5 /ServerNeu5/cmake-build-docker /ServerNeu5/cmake-build-docker /ServerNeu5/cmake-build-docker/CMakeFiles/CLion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /ServerNeu8/cmake-build-docker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ServerNeu8 /ServerNeu8 /ServerNeu8/cmake-build-docker /ServerNeu8/cmake-build-docker /ServerNeu8/cmake-build-docker/CMakeFiles/CLion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CLion.dir/depend
 
