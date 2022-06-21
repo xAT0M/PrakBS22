@@ -6,7 +6,7 @@
 #include <sys/shm.h>
 #include <string.h>
 #include <sys/ipc.h>
-
+//test
 #include <sys/msg.h>
 
 
