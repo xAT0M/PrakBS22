@@ -36,10 +36,7 @@ char busy[BUFSIZ] = "\nDer Store wird von einem anderen Client genutzt\n\n"; //e
 int *transaktion = 0; //exklusiver Zugriff auf den Store
 kvs *speicher = NULL; //Shared Memory Store
 subs *sub = NULL;
-
 int *subsCount = 0;
-
-
 
 
 int main()
@@ -47,10 +44,7 @@ int main()
     int temp;
     msgID = msgget(IPC_PRIVATE, IPC_CREAT | 0644);
 
-
     FILE *sockstream; //verbesserter Input
-
-
 
     int shmID = shmget(IPC_PRIVATE, MAXCHAR * sizeof (kvs), IPC_CREAT | 0644); //Segment öffnen mit einer größe von 100 Einträgen
     int subsID = shmget(IPC_PRIVATE, MAXCHAR * sizeof (subs), IPC_CREAT | 0644);
@@ -155,12 +149,8 @@ int main()
 
         sockstream = fdopen(cfd, "r+"); // r+ = Read & Write | verbesserter Input
 
-
-
         while(pid == 0)
         {
-
-
 
           memset(output,0,sizeof(output)); //Inhalt der Strings leeren um fehler zu vorzubeugen
           memset(string1,0,sizeof(string1));
@@ -250,8 +240,6 @@ int main()
     }
 
 }
-
-
 
 int anybodySub(char* key,char* value, subs *subc ){
     for(int i = 0; i < *subsCount; i++)

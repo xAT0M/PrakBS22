@@ -73,7 +73,7 @@ int subAdd(long pid, char* key,subs *sub, int subcount){
 
 //    for(int i = 0; i < MAXCHAR; i++)
 //    {
-//        if(strcmp(sub[i].key,key)==0)   // suche nach vorhandenen Key
+//        if(strcmp(sub[i].key,key)==0)   // keine doppelten subs von einem Client
 //        {
 //
 //            if(sub[i].pid == pid)
