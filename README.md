@@ -1,6 +1,6 @@
 # PrakBS22
 Praktikum-Gruppe17
-Aldo
-Erdinc
-Moritz
-Sebastian
+Aldo G.
+Erdinc G.
+Moritz P.
+Sebastian T.
