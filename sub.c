@@ -5,10 +5,7 @@
 #include <string.h>
 
 
-
-
-void closeProzess(int cfd,int rfd)
-{
+void closeProzess(int cfd, int rfd) {
     printf("\nVerbindung zum Client wird unterbrochen und Prozess %i beendet", getpid());
     close(cfd); //Client schließen
     close(rfd);
@@ -26,8 +23,7 @@ void closeProzess(int cfd,int rfd)
  */
 
 
-int BefehlErkenner(char String[])
-{
+int BefehlErkenner(char String[]) {
     char beg[] = "beg";
     char end[] = "end";
     char get[] = "get";
@@ -36,40 +32,34 @@ int BefehlErkenner(char String[])
     char quit[] = "quit";
     char sub[] = "sub";
 
-    if(strcmp(String,sub)==0)
-    {
+    if (strcmp(String, sub) == 0) {
         return 5;
     }
-    if(strcmp(String,beg)==0)
-    {
+    if (strcmp(String, beg) == 0) {
         return 0;
     }
-    if(strcmp(String,end)==0)
-    {
+    if (strcmp(String, end) == 0) {
         return 2;
     }
 
-    if(strcmp(String,get)==0)
-    {
+    if (strcmp(String, get) == 0) {
         return 4;
 
-    }else if(strcmp(String,put)==0)
-    {
+    } else if (strcmp(String, put) == 0) {
         return 6;
 
-    }else if(strcmp(String,del)==0)
-    {
+    } else if (strcmp(String, del) == 0) {
         return 3;
 
-    }else if(strcmp(String,quit)==0)
-    {
+    } else if (strcmp(String, quit) == 0) {
         return 1;
     }
     return -1;
 }
 
 int z = 0;
-int subAdd(long pid, char* key,subs *sub, int subcount){
+
+int subAdd(long pid, char *key, subs *sub, int subcount) {
 
 //    for(int i = 0; i < MAXCHAR; i++)
 //    {
@@ -80,16 +70,17 @@ int subAdd(long pid, char* key,subs *sub, int subcount){
 //                    return 1;
 //                }
 //            }
- printf("\nSubscriber davor:  %i\n",subcount);
- strcpy(sub[subcount].key, key);
- sub[subcount].pid = pid;
- printf("\nsubAdd() speichert den Sub %s für die PID %li\n\n",sub[z].key,sub[z].pid);
+    printf("\nSubscriber davor:  %i\n", subcount);
+    strcpy(sub[subcount].key, key);
+    sub[subcount].pid = pid;
+    printf("\nsubAdd() speichert den Sub %s für die PID %li\n\n", sub[z].key, sub[z].pid);
     subcount++;
-    printf("\nSubscriber danach: %i\n",subcount);
- return subcount;
+    printf("\nSubscriber danach: %i\n", subcount);
+    return subcount;
 
 }
-int wievielesubs(){
+
+int wievielesubs() {
     return z;
 }
 
